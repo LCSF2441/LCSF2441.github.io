@@ -1,0 +1,153 @@
+/*Dec 4 2024
+Justin Hunt
+about.css*/
+
+h1 {
+    font-size: 1.3em;
+    padding-bottom: 0.7em;
+}
+
+h2 {
+    font-size: 1.2em;
+    padding-bottom: 0.7em;
+    margin: 0;
+}
+
+#aboutus {
+    background-color: #8794be;
+}
+
+#aboutus, #guarantee{
+    padding: 0.7em;
+    display: block;
+}
+main img {
+    margin: auto;
+    border-radius: 40px;
+}
+
+p {
+    font-size: 0.6em;
+}
+
+main {
+    padding-bottom: 1em;
+}
+
+#line{
+    font-weight: bold;
+    color:rgb(41, 175, 135)
+}
+
+.mobile {
+    display: block;
+}
+
+#fulltext {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
+.mobile-tablet {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/*tbalet*/
+@media screen and (min-width: 630px), print {
+    p {
+        font-size: 0.65em;
+    }
+
+    #fulltext {
+        display: inline-block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet-desktop {
+        display: block;
+    }
+
+}
+
+/*desktop*/
+@media screen and (min-width: 1015px), print {
+
+    #aboutus, #guarantee {
+        display: inline-block;
+        padding: 5%;
+        border-radius: 16px;
+    }
+
+    #aboutus img{
+        float: left;
+    }
+
+    h1, h2 {
+        padding-top: 0.5em;
+        padding-bottom: 0; 
+        padding: 0.5em 0 0;
+    }
+
+    h2 {
+        padding-top: 1em;
+    }
+
+    main p {
+        width: 45%;
+        display: inline-block;
+    }
+
+    main {
+        padding: 2em;
+    }
+
+    main img {
+        margin: 1em 2em 0 0;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .mobile-tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    /*guarantee styless*/
+
+    #guarantee img {
+        float: right;
+    }
+
+}
+
+/*larger screens*/
+@media screen and (min-width: 1200px), print {
+
+    p {
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (min-width: 1600px), print {
+
+    p {
+        font-size: 1em;
+    }
+
+}

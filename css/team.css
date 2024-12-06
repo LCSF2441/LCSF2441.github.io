@@ -1,0 +1,114 @@
+/*
+Justin Hunt
+Dec 5 2024
+team.css
+*/
+
+
+/*mobile*/
+h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    padding-top: 1em;
+}
+
+p {
+    font-size: 0.6em;
+}
+
+article {
+    padding: 2%;
+}
+
+figcaption {
+    padding-bottom: 10%;
+}
+
+.desktop {
+    display: none;
+}
+
+/*tablet*/
+@media screen and (min-width: 630px), print {
+    
+    #teamimg {
+        padding: 0 5%;
+    }
+
+    section {
+        padding: 5% 10% 10%;
+    }
+
+}
+
+/*desktop*/
+@media screen and (min-width: 1015px), print {
+
+    .desktop {
+        display: block;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    article {
+        width: 60%;
+        padding: 2% 5%;
+        float: left;
+    }
+
+    aside {
+        width: 20%;
+        display: block;
+        background-color: #bfcef7;
+        font-size: 0.4em;
+        padding: 2% 3% 2%;
+        float: right;
+        margin-top: 2em;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    aside ul {
+        list-style-type: circle;
+    }
+
+    aside li {
+        padding: 0.7em;
+    }
+
+    main img {
+        margin: auto;
+    }
+
+    #teamheader {
+        clear: both;
+        margin-bottom: 0;
+    }
+
+    section {
+        padding: 0 3% 3%;
+        display: inline-block;
+    }
+
+    fig {
+        max-width: 28%;
+        display: inline-block;
+        margin: 2%;
+    }
+
+}
+
+/*large screens*/
+@media screen and (min-width: 1400px), print {
+
+    p{
+        font-size: 0.8em;
+    }
+
+    aside {
+        font-size: 0.5em;
+    }
+
+}

@@ -1,0 +1,24 @@
+/*Justin Hunt
+dec 06 2024
+media.css*/
+
+h2{
+    font-size: 1.2em;
+    padding-top: 1em;
+}
+
+video{
+    width: 80%;
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #91adf9;
+    border-radius: 15px;
+}
+
+audio {
+    padding: 0.5em;
+    max-width: 90%;
+    background-color: #91adf9;
+    border-radius: 35px;
+    margin-bottom: 1em
+}

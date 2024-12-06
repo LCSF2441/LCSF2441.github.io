@@ -1,0 +1,227 @@
+/*
+Justin Hunt
+styles.css
+Oct 23 2024
+*/
+
+/*css reset*/
+body, header, nav, main, footer, h1, div, img, ul, li, section{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/**style rules for mobile**/
+
+body {
+    background: radial-gradient(circle, #91adf9, #1c253f);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/*style rules for header*/
+
+header {
+    height: 140px;
+    background: radial-gradient(circle, #5d70aa, #1c253f);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 1em;
+}
+
+header img {
+    margin: auto;
+    border-radius: 70px;
+    width: 140px;
+    height: 140px;
+}
+
+/*style rules for nav*/
+
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background: radial-gradient(circle, #819be2, #586ca8);
+}
+
+nav li {
+    font-size: 1.5em;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 480;
+    border-top: 1px solid #fff;
+}
+
+nav li:first-child {
+    border-top: none;
+}
+
+nav li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 0.4em 1em;
+}
+
+/*main*/
+
+main {
+    display: block;
+    background-color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    text-align:center;
+    font-size: 2em;
+    position: static;
+    padding: 1em;
+}
+
+/*only in index*/
+#intro{
+    font-size: 0.8em;
+    padding: 0.5em;
+    margin: 0;
+}
+
+/*footer*/
+
+footer{
+    text-align:center;
+    font-size: 0.95em;
+    margin-top: 1em;
+    color: #a0a0a0;
+}
+
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/*tablet style rules*/
+@media screen and (min-width: 630px), print {
+    .mobile{
+        display: none;
+    }
+
+    .tablet-desktop{
+        display: block;
+    }
+
+    header {
+        position: relative;
+        background: none;
+    }
+
+    nav {
+        margin: auto;
+        padding: 1em;
+        text-align: center;
+        display: block;
+    }
+
+    nav ul {
+        list-style-type: none;
+        background: radial-gradient(circle, #819be2, #586ca8);
+        border: 1px solid #000;
+        border-radius: 100px;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0;
+        padding: 0 0.3em;
+        border: none;
+    }
+
+    #intro {
+        font-size: 1em;
+    }
+
+}
+
+/*desktop style rules*/
+@media screen and (min-width: 1015px), print {
+    
+    /*header*/
+    header {
+        float: left;
+        position: static;
+        width: 15%;
+    }
+
+    nav {
+        margin: auto;
+        position: relative;
+        display: inline-block;
+        width: 75%;
+        padding: 1em;
+        
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 1.5em;
+        height: auto;
+        position: relative;
+        text-align: center;
+         
+    }
+    
+    nav li {
+        display: inline-block;
+        margin: 0;
+        font-size: 1.5em;
+        padding: 0 0.3em;
+        border: none;
+    }
+
+    nav li a {
+        display: block;
+        color: #000;
+        padding: 0.5em 1em;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    nav li a:hover {
+		color: #000;
+		background-color:#91adf9;
+        border-radius: 10px;
+		transform: scale(1.2,1.2);
+	}
+
+    main{
+        clear: left
+    }
+
+    #intro {
+        font-size: 1.1em;
+    }
+
+}
+
+/* adjustments to nav for larger screen sizes*/
+@media screen and (min-width: 1119px), print {
+    nav li{
+        padding: 0 1em;
+    }
+
+}
+
+@media screen and (min-width: 1511px), print{
+    nav ul {
+        margin: 2em 1.5em;
+        padding: 1em 0;
+    }
+
+    nav li{
+        padding: 0;
+    }
+
+}
